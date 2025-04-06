@@ -1,0 +1,68 @@
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+
+    .signup-box {
+        background-color: #2d3748; // Tailwind's gray-800
+        padding: 2.5rem;
+        border-radius: 0.75rem;
+
+        h1 {
+            text-align: center;
+            color: #ffffff;
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+
+        input {
+            background-color: #4a5568; // gray-600
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            width: 100%;
+            border-radius: 0.5rem;
+            color: white;
+            outline: none;
+
+            &::placeholder {
+                color: #e2e8f0; // placeholder:text-gray-200
+            }
+
+            @media (min-width: 1024px) {
+                width: 20em;
+            }
+        }
+
+        .signup-button-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 0.75rem;
+
+            button {
+                background-color: #ef4444; // red-500
+                width: 100%;
+                color: white;
+                font-weight: bold;
+                padding: 0.5rem;
+                border-radius: 0.5rem;
+                cursor: pointer;
+            }
+        }
+
+        h2 {
+            color: white;
+            font-size: 21px;
+
+            a {
+                color: #ef4444; // red-500
+                font-weight: bold;
+                text-decoration: none;
+            }
+        }
+    }
+}
